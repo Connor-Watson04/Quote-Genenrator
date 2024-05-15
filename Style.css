@@ -30,8 +30,12 @@ body {
   font-size: 2.75rem;
 }
 
-.long-quote {
+.medium-quote {
   font-size: 2rem;
+}
+
+.Long-quote {
+  font-size: 1.5rem;
 }
 
 .fa-quote-left {
@@ -43,6 +47,10 @@ body {
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
+}
+
+.small-author {
+  font-size: 1.3rem;
 }
 
 button {

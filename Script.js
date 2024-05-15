@@ -35,10 +35,19 @@ function newQuote() {
   //Check for quote length to determine styling
 
   if (quote.text.length > 50) {
-    quoteText.classList.add("long-quote");
+    quoteText.classList.add("meduim-quote");
   } else {
-    quoteText.classList.remove("long-quote");
+    quoteText.classList.remove("meduim-quote");
   }
+
+  if (quote.text.length > 100) {
+    quoteText.classList.add("Long-quote");
+    authorText.classList.add("small-author");
+  } else {
+    quoteText.classList.remove("Long-quote");
+    authorText.classList.remove("small-author");
+  }
+
   //set Quote & hide loader
   quoteText.textContent = quote.text;
   removeLoadingSpinner();
